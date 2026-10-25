@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create cheerful children's story scripts, cartoon scenes and MP4 story videos with ToonStory AI.">
+  <title>ToonStory AI — Little stories, big imagination</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">✦</span> ToonStory <span class="brand-ai">AI</span></a>
+    <a class="nav-link" href="#creator">Create a story <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> YOUR STORY, YOUR LITTLE UNIVERSE</div>
+        <h1>Little stories.<br><span>Big imagination.</span></h1>
+        <p>Turn a tiny idea into a cheerful children's story, a cartoon storyboard, and a downloadable video.</p>
+        <a class="primary-link" href="#creator">Make a story <span>→</span></a>
+        <div class="hero-note"><span class="dot"></span> Free starter studio · No API key required</div>
+      </div>
+      <div class="hero-art" aria-label="Friendly cartoon bunny illustration">
+        <div class="sun"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <div class="flower flower-a">✿</div><div class="flower flower-b">✿</div>
+        <div class="bunny"><div class="ear ear-left"></div><div class="ear ear-right"></div><div class="face"><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="nose"></i><i class="mouth"></i><i class="cheek cheek-left"></i><i class="cheek cheek-right"></i></div><div class="body"></div><div class="paw paw-left"></div><div class="paw paw-right"></div></div>
+        <div class="bird"><span></span></div>
+        <div class="art-label">A little magic starts here ✨</div>
+      </div>
+    </section>
+
+    <section class="creator section" id="creator">
+      <div class="section-heading"><div><div class="eyebrow">THE STORY STUDIO</div><h2>What shall we dream up?</h2></div><span class="step-pill">01 / CREATE</span></div>
+      <form id="story-form" class="creator-card">
+        <label for="topic">Your story idea</label>
+        <textarea id="topic" maxlength="180" required placeholder="A brave little rabbit who wants to find the moon…"></textarea>
+        <div class="form-row">
+          <div class="field"><label for="age">Age group</label><select id="age"><option>3-5</option><option selected>4-8</option><option>8-12</option></select></div>
+          <div class="field"><label for="language">Story language</label><select id="language"><option selected>English</option><option>Hindi</option><option>Hinglish</option></select></div>
+        </div>
+        <button class="button button-primary" id="create-btn" type="submit"><span>✦</span> Generate my story <span class="button-arrow">→</span></button>
+        <p class="tiny-note">This starter version uses an offline story template and original cartoon illustrations. No paid AI service is required.</p>
+      </form>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="results" class="results section hidden">
+      <div class="section-heading"><div><div class="eyebrow">YOUR CREATION</div><h2 id="story-title">Your story</h2></div><span class="step-pill">02 / PREVIEW</span></div>
+      <p id="story-intro" class="story-intro"></p>
+      <div id="scene-grid" class="scene-grid"></div>
+      <div class="action-bar">
+        <button id="read-btn" class="button button-secondary" type="button">🔊 Read story aloud</button>
+        <button id="stop-btn" class="button button-secondary" type="button">■ Stop narration</button>
+        <a id="script-link" class="button button-secondary" href="#" download>↓ Download script</a>
+        <button id="video-btn" class="button button-primary" type="button">✦ Build MP4 video</button>
+      </div>
+      <p id="video-status" class="status" role="status" aria-live="polite"></p>
+      <div id="video-wrap" class="video-wrap hidden"><video id="video-player" controls playsinline></video><a id="video-download" class="download-link" href="#" download="toonstory-video.mp4">↓ Download MP4</a><p class="tiny-note">Video export is a silent cartoon slideshow in this starter version. Use Read story aloud for narration.</p></div>
+      <p class="tiny-note">Tip: generated files are temporary on free hosting and may be removed when the service restarts or redeploys.</p>
+    </section>
+
+    <section class="how section">
+      <div class="eyebrow">MADE FOR LITTLE DREAMERS</div><h2>From idea to storytime.</h2>
+      <div class="feature-grid">
+        <article class="feature"><span class="feature-icon peach">✎</span><h3>Dream up a story</h3><p>Start with a character, a place, or a little adventure.</p></article>
+        <article class="feature"><span class="feature-icon mint">✿</span><h3>Meet the scenes</h3><p>Preview a set of colorful, original cartoon illustrations.</p></article>
+        <article class="feature"><span class="feature-icon lilac">▶</span><h3>Share storytime</h3><p>Download your script or export a simple MP4 video.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="/">✦ ToonStory <span class="brand-ai">AI</span></a><span>Made with imagination and a little bit of code.</span></footer>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
