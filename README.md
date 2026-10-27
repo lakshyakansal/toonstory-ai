@@ -364,4 +364,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Author:** Kamakshi Arora
+**Author:** Kamakshi Arora and Lakshya Kansal
